@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import './common/all';
 import Application from '../../app';
 import config from '../../config/environment';
 

@@ -15,3 +15,8 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+.DS_Store
+lcov.dat
+coverage.json
+
+.idea

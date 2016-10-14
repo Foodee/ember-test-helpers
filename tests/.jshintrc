@@ -1,5 +1,7 @@
 {
   "predef": [
+    "waitTime",
+    "waitUntil",
     "document",
     "window",
     "location",

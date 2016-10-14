@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('async-test');
+  this.route('dom-detection-test');
 });
 
 export default Router;
