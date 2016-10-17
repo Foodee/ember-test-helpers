@@ -10,12 +10,18 @@ module.exports = {
       // .jshintrc file
       const file1          = 'tests/.jshintrc';
       const text1          = '    "waitTime",' + EOL +
-                             '    "waitUntil",';
+                             '    "waitUntil",' + EOL +
+                             '    "fillInTyping",' + EOL +
+                             '    "fillInAddress",' + EOL +
+                             '    "fillInPhone",';
       const locationText1  = '"predef": [' + EOL;
 			
       const file2          = 'tests/.eslintrc.js';
       const text2          = '    "waitTime": 1,' + EOL +
-                             '    "waitUntil": 1,';
+                             '    "waitUntil": 1,' + EOL +
+                             '    "fillInTyping": 1,' + EOL +
+                             '    "fillInAddress": 1,' + EOL +
+                             '    "fillInPhone": 1,';
       const locationText2  = '"globals": {' + EOL;
 			
       const file3          = 'tests/helpers/start-app.js';

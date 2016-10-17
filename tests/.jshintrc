@@ -2,6 +2,9 @@
   "predef": [
     "waitTime",
     "waitUntil",
+    "fillInTyping",
+    "fillInAddress",
+    "fillInPhone",
     "document",
     "window",
     "location",

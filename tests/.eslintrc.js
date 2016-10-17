@@ -17,6 +17,9 @@ module.exports = {
   "globals": {
     "waitTime": 1,
     "waitUntil": 1,
+    "fillInTyping": 1,
+    "fillInAddress": 1,
+    "fillInPhone": 1,
     "$": 1,
     "_": 1,
     "visit": 1,
