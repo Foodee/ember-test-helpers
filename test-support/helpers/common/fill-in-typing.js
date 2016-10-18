@@ -11,10 +11,10 @@ const {
  * @param password {String}
  */
 export default Test.registerAsyncHelper('fillInTyping',
-	function signIn(app, selector, string) {
+	function signIn(app, selector, string, maxDelay = 50) {
     click(selector);
     for(var i = 0; i < string.length; i++) {
-      waitTime(Math.random() * 50);
+      waitTime(Math.random() * maxDelay);
       fillIn(selector, string.substring(0, i+1));
       keyEvent(selector, 'keydown', string.charCodeAt(i));
       keyEvent(selector, 'keypress', string.charCodeAt(i));
