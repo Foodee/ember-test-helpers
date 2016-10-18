@@ -17,10 +17,10 @@ export default Test.registerAsyncHelper('fillInAddress',
     waitUntil('.pac-item:first'); 
 		keyEvent(selector, 'keydown', 40); //Down
 		keyEvent(selector, 'keydown', 13); //Enter
-    
+    waitTime(1000); //wait for selection to take place
     return andThen(() => {
       $(selector).blur();
     });
-    waitTime(1000); //wait for selection to take place
+    waitTime(1000); //wait for selection to use formatted_address
 	}
 )
