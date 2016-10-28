@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 const {
-	$,
-	Test
+  $,
+  Test
 } = Ember;
 
 /**
@@ -11,16 +11,16 @@ const {
  * @param password {String}
  */
 export default Test.registerAsyncHelper('fillInAddress',
-	function signIn(app, selector, address) {
+  function signIn(app, selector, address) {
     fillInTyping(selector, address, 100);
     waitTime(1000); // wait for autocomplete to settle
     waitUntil('.pac-item:first'); 
-		keyEvent(selector, 'keydown', 40); //Down
-		keyEvent(selector, 'keydown', 13); //Enter
+    keyEvent(selector, 'keydown', 40); //Down
+    keyEvent(selector, 'keydown', 13); //Enter
     waitTime(1000); //wait for selection to take place
     return andThen(() => {
       $(selector).blur();
     });
     waitTime(1000); //wait for selection to use formatted_address
-	}
+  }
 )

@@ -13,6 +13,7 @@ module.exports = {
                              '    "waitUntil",' + EOL +
                              '    "fillInTyping",' + EOL +
                              '    "fillInAddress",' + EOL +
+                             '    "fillInPrice",' + EOL +
                              '    "fillInPhone",';
       const locationText1  = '"predef": [' + EOL;
 			
@@ -21,6 +22,7 @@ module.exports = {
                              '    "waitUntil": 1,' + EOL +
                              '    "fillInTyping": 1,' + EOL +
                              '    "fillInAddress": 1,' + EOL +
+                             '    "fillInPrice": 1,' + EOL +
                              '    "fillInPhone": 1,';
       const locationText2  = '"globals": {' + EOL;
 			
