@@ -5,10 +5,10 @@ import Ember from 'ember';
  *
  * @param selector
  */
-export default Ember.Test.registerAsyncHelper('waitUntil',
+export default Ember.Test.registerAsyncHelper('waitUntilNot',
 	function(app, selector) {
 		const waiter = function() {
-			return Ember.$(selector).length > 0;
+			return Ember.$(selector).length === 0;
 		};
 
 		Ember.Test.registerWaiter(waiter);
