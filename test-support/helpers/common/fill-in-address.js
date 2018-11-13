@@ -11,16 +11,9 @@ const {
  * @param password {String}
  */
 export default Test.registerAsyncHelper('fillInAddress',
-  function signIn(app, selector, address) {
-    fillInTyping(selector, address, 100);
-    waitTime(1000); // wait for autocomplete to settle
-    waitUntil('.pac-item:first'); 
-    keyEvent(selector, 'keydown', 40); //Down
-    keyEvent(selector, 'keydown', 13); //Enter
-    waitTime(1000); //wait for selection to take place
-    return andThen(() => {
-      $(selector).blur();
-    });
-    waitTime(1000); //wait for selection to use formatted_address
+  function fillInAddress(app, selector, address) {
+    fillIn(selector, address);
+    waitUntil('.fde-form-controls-address-autocomplete-control_result-item:first');
+    click('.fde-form-controls-address-autocomplete-control_result-item:first');
   }
 )

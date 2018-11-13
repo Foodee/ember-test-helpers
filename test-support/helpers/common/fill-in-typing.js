@@ -11,7 +11,7 @@ const {
  * @param password {String}
  */
 export default Test.registerAsyncHelper('fillInTyping',
-	function signIn(app, selector, string, maxDelay = 50) {
+	function fillInTyping(app, selector, string, maxDelay = 50) {
     click(selector);
     for(var i = 0; i < string.length; i++) {
       waitTime(Math.random() * maxDelay);
