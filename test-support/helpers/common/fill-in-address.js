@@ -15,6 +15,6 @@ export default Test.registerAsyncHelper('fillInAddress',
     fillIn(selector, address);
     waitUntil('.fde-form-controls-address-autocomplete-control_result-item:first');
     click('.fde-form-controls-address-autocomplete-control_result-item:first');
-    waitTime(250);
+    waitTime(1000);
   }
 )
